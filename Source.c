@@ -37,7 +37,7 @@ void RootSeek()
 		}
 
 	}
-	printf("%s%f%s%f\n\n", "Корень уравнения = ", mid, " значение функции = ", Func1(mid));
+	printf("%s%f%s%f\n\n", "РљРѕСЂРµРЅСЊ СѓСЂР°РІРЅРµРЅРёСЏ = ", mid, " Р·РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё = ", Func1(mid));
 	return;
 }
 
@@ -63,10 +63,10 @@ void Integration()
 	while (fabs(countSum(n, A, B) - countSum(n - 1, A, B)) > eps) 
 	{
 		n++;
-		printf("%s%d", "При N = ", n);
-		printf("%s%f\n", " Значение интеграла = ", countSum(n, A, B));
+		printf("%s%d", "РџСЂРё N = ", n);
+		printf("%s%f\n", " Р—РЅР°С‡РµРЅРёРµ РёРЅС‚РµРіСЂР°Р»Р° = ", countSum(n, A, B));
 	}
-	printf("%s%f\n\n", "\nИтоговое значение интеграла = ", countSum(n, A, B));
+	printf("%s%f\n\n", "\nРС‚РѕРіРѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ РёРЅС‚РµРіСЂР°Р»Р° = ", countSum(n, A, B));
 	return;
 }
 
@@ -80,7 +80,7 @@ int main()
 	system("color F0");
 	RootSeek();
 	
-	printf("%s\n\n", "Вычисление интеграла: ");
+	printf("%s\n\n", "Р’С‹С‡РёСЃР»РµРЅРёРµ РёРЅС‚РµРіСЂР°Р»Р°: ");
 	Integration();
 
 	return 0;
